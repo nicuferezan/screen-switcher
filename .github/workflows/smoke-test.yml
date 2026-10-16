@@ -1,0 +1,57 @@
+name: Smoke test
+
+# Downloads the released DMG and runs the app's built-in --self-test on several macOS versions.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Release tag to test (empty = latest)"
+        required: false
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15-intel, macos-14, macos-15, macos-26]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - name: Download DMG
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name || inputs.tag }}
+        run: gh release download $TAG -R "$GITHUB_REPOSITORY" -p '*.dmg' -O app.dmg
+
+      - name: Install
+        run: |
+          hdiutil attach app.dmg -nobrowse -mountpoint /Volumes/ScreenSwitcher
+          cp -R /Volumes/ScreenSwitcher/ScreenSwitcher.app /Applications/
+          hdiutil detach /Volumes/ScreenSwitcher
+          sw_vers
+          uname -m
+          lipo -archs /Applications/ScreenSwitcher.app/Contents/MacOS/ScreenSwitcher
+
+      - name: Gatekeeper assessment (informational)
+        run: spctl --assess --type execute -vv /Applications/ScreenSwitcher.app 2>&1 || true
+
+      - name: Self-test
+        run: /Applications/ScreenSwitcher.app/Contents/MacOS/ScreenSwitcher --self-test | tee report.txt
+
+      - name: Launch and stay alive
+        run: |
+          open /Applications/ScreenSwitcher.app
+          sleep 8
+          pgrep -x ScreenSwitcher
+          pkill -x ScreenSwitcher
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: report-${{ matrix.os }}
+          path: report.txt
