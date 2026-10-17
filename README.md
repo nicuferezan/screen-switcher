@@ -17,7 +17,7 @@
 
 ## What it does
 
-Press **⌘Space** (or your own hotkey) and a panel shows every space you have — regular desktops and full-screen apps, including both apps of a Split View — with their real icons.
+Press **⌃Q** (or your own hotkey) and a panel shows every space you have — regular desktops and full-screen apps, including both apps of a Split View — with their real icons.
 
 - Press the app's **letter** (C = Chrome, M = MySQL…) to jump straight to it.
 - Or click, use ←/→ + Enter, or the position number 1–9.
@@ -34,7 +34,7 @@ Press **⌘Space** (or your own hotkey) and a panel shows every space you have �
 4. Follow the **Setup** window:
    - allow **Accessibility** (needed to switch spaces),
    - enable **Mission Control** shortcuts (“Move left/right a space”, “Switch to Desktop N”),
-   - if you keep ⌘Space, turn it off for Spotlight — or choose another hotkey.
+   - the panel opens with **⌃Q**; change it from the menu bar icon → **Change Hotkey…** if you need ⌃Q elsewhere.
 
 Requires macOS 13 Ventura or later, Apple silicon or Intel.
 
@@ -48,4 +48,5 @@ Found a bug or want a feature? [Open an issue](https://github.com/nicuferezan/sc
 
 ---
 
-<sub>Screen Switcher uses undocumented macOS APIs to read the list of spaces, so a macOS update may break it until a new version is released.</sub>
+<sub>Made by <a href="https://binary.company">binary.company</a>.<br>
+Screen Switcher uses undocumented macOS APIs to read the list of spaces, so a macOS update may break it until a new version is released.</sub>

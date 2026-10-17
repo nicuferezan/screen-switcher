@@ -1,6 +1,6 @@
 # Screen Switcher — Freeware License
 
-Copyright © 2026 Nicu Ferezan. All rights reserved.
+Copyright © 2026 [binary.company](https://binary.company). All rights reserved.
 
 1. **Use.** You may download, install and use Screen Switcher free of charge, for personal or commercial purposes, on any number of Macs.
 2. **Redistribution.** You may share the unmodified DMG and link to the official download page. You may not sell it or bundle it with other software without written permission.
