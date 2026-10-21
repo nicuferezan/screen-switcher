@@ -17,7 +17,7 @@
 
 ## What it does
 
-Press **⌃Q** (or your own hotkey) and a panel shows every space you have — regular desktops and full-screen apps, including both apps of a Split View — with their real icons.
+Press **⌘J** (or your own hotkey) and a panel shows every space you have — regular desktops and full-screen apps, including both apps of a Split View — with their real icons.
 
 - Press the app's **letter** (C = Chrome, M = MySQL…) to jump straight to it.
 - Or click, use ←/→ + Enter, or the position number 1–9.
@@ -58,7 +58,7 @@ Open the panel, change the hotkey, toggle the app shortcuts, Spotlight and Apps 
 4. Follow the **Setup** window:
    - allow **Accessibility** (needed to switch spaces),
    - enable **Mission Control** shortcuts (“Move left/right a space”, “Switch to Desktop N”),
-   - the panel opens with **⌃Q**; change it from the menu bar icon → **Change Hotkey…** if you need ⌃Q elsewhere.
+   - the panel opens with **⌘J**; change it from the menu bar icon → **Change Hotkey…** if you need ⌘J elsewhere.
 
 Requires macOS 13 Ventura or later, Apple silicon or Intel.
 
