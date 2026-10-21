@@ -24,6 +24,24 @@ Press **⌃Q** (or your own hotkey) and a panel shows every space you have — r
 - Set your own letters: right-click an app → **Set Shortcut…**.
 - Lives in the menu bar, no Dock icon. Optional launch at login.
 
+<p align="center"><img src="screenshots/panel.png" width="800" alt="The panel: every desktop and full-screen app, with the front app's shortcuts below"></p>
+
+### Shortcuts of the app in front
+
+Under the spaces, the panel lists the menu shortcuts of the app you were using. Press **1–9** to run one without hunting through menus; the traffic lights minimise, zoom or close its window.
+
+### Pick your favourite shortcuts
+
+Menu bar icon → **Edit App Shortcuts…**: star the shortcuts you use most, drag to reorder, or add custom key combinations. The first 9 show in the panel.
+
+<p align="center"><img src="screenshots/shortcuts-editor.png" width="640" alt="Shortcut editor with all menu shortcuts on the left and favourites on the right"></p>
+
+### Setup in one window
+
+Permissions, Mission Control shortcuts and the panel hotkey, each with a live status check.
+
+<p align="center"><img src="screenshots/setup.png" width="460" alt="Setup window with Accessibility, Mission Control and hotkey checks"></p>
+
 ## Install
 
 1. Download `ScreenSwitcher-x.y.z.dmg` from [Releases](https://github.com/nicuferezan/screen-switcher/releases/latest).
