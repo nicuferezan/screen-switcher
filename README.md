@@ -30,9 +30,9 @@ Press **⌃Q** (or your own hotkey) and a panel shows every space you have — r
 
 Under the spaces, the panel lists the menu shortcuts of the app you were using. Press **1–9** to run one without hunting through menus; the traffic lights minimise, zoom or close its window.
 
-### Pick your favourite shortcuts
+### Favourite and custom shortcuts — Pro, coming soon
 
-Menu bar icon → **Edit App Shortcuts…**: star the shortcuts you use most, drag to reorder, or add custom key combinations. The first 9 show in the panel.
+Menu bar icon → **Edit App Shortcuts…** lists every menu shortcut of the app. Choosing your favourites, reordering them and adding custom key combinations will come with **Screen Switcher Pro**. The free version shows each app's default shortcuts; favourites you saved in an earlier version keep working.
 
 <p align="center"><img src="screenshots/shortcuts-editor.png" width="640" alt="Shortcut editor with all menu shortcuts on the left and favourites on the right"></p>
 
@@ -41,6 +41,12 @@ Menu bar icon → **Edit App Shortcuts…**: star the shortcuts you use most, dr
 Permissions, Mission Control shortcuts and the panel hotkey, each with a live status check.
 
 <p align="center"><img src="screenshots/setup.png" width="460" alt="Setup window with Accessibility, Mission Control and hotkey checks"></p>
+
+### Menu bar
+
+Open the panel, change the hotkey, toggle the app shortcuts and Spotlight button, or copy diagnostics for a bug report.
+
+<p align="center"><img src="screenshots/menu.png" width="283" alt="Screen Switcher menu in the menu bar"></p>
 
 ## Install
 
