@@ -13,7 +13,7 @@
   <a href="https://buymeacoffee.com/nicuferezao"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%E2%98%95-FFDD00?style=for-the-badge" alt="Buy me a coffee"></a>
 </p>
 
-<p align="center"><img src="screenshots/demo.gif" width="800" alt="Demo: running a Terminal script from the panel, clearing the screen, then jumping to ChatGPT and back"></p>
+<p align="center"><img src="screenshots/demo-terminal-chatgpt.gif" width="800" alt="Demo: running a Terminal script from the panel, clearing the screen, then jumping to ChatGPT and back"></p>
 
 ---
 
